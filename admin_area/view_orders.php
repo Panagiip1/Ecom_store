@@ -120,9 +120,11 @@ else {
 									<td>
 										<?php
 
-										if($order_status=='pending'){
+										if($order_status=='Η Πληρωμή Αναμένεται
+'){
 
-											echo $order_status='pending';
+											echo $order_status='Η Πληρωμή Αναμένεται
+';
 
 										}else{
 
@@ -133,7 +135,7 @@ else {
 									</td>
 
 									<td>
-										<a href="index.php?order_delete=<?php $order_id; ?>">
+										<a href="index.php?order_delete=<?php echo $order_id; ?>">
 										<i class="fas fa-trash-alt"></i>	
 											Διαγραφή
 										</a>

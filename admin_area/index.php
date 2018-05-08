@@ -166,6 +166,10 @@ $count_pending_orders = mysqli_num_rows($run_pending_orders);
 				include("view_orders.php");
 			}
 
+			if(isset($_GET['order_delete'])){
+				include("order_delete.php");
+			}
+
 			?>
 
 			

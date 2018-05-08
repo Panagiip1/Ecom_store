@@ -251,10 +251,12 @@ else {
   <li class="nav-item">
             <a class="nav-link" href="index.php?view_customers"><i class="fas fa-edit"></i> Δείτε τους Πελάτες </i><span class="sr-only">(current)</span></a>
     </li>
+
+     <li class="nav-item">
+            <a class="nav-link" href="index.php?view_orders"><i class="fas fa-edit"></i> Δείτε τις Παραγγελίες σας </i><span class="sr-only">(current)</span></a>
+    </li>
   
-   <li class="nav-item">
-    <a class="nav-link" data-toggle="collapse" href="#item-7" data-parent="#accordion1"><i class="fas fa-list-ul"></i> Δείτε τις Παραγγελίες σας </a>
-  </li>
+  
    <li class="nav-item">
     <a class="nav-link" data-toggle="collapse" href="#item-8" data-parent="#accordion1"><i class="fas fa-pencil-alt"></i> Δείτε τις Πληρωμές σας</a>
   </li>
