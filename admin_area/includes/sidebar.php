@@ -265,7 +265,7 @@ else {
     <a class="nav-link" data-toggle="collapse" href="#item-9" data-parent="#accordion1"><i class="fas fa-cogs"></i> Χρήστες <i class="fas fa-caret-down"></i></a>
     <div id="item-9" class="collapse">
       <ul class="nav flex-column ml-2">
-        <li> <a class="dropdown-item" href="index.php?insert_product"> Εισαγωγή Χρήστη</a></li>
+        <li> <a class="dropdown-item" href="index.php?insert_user"> Εισαγωγή Χρήστη</a></li>
          <li> <a class="dropdown-item" href="index.php?view_products"> Δείτε τους Χρήστες</a></li>
           <li> <a class="dropdown-item" href="index.php?view_products"> Edit το Προφίλ σας</a></li>
       </ul>
