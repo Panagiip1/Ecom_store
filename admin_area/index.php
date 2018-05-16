@@ -178,10 +178,13 @@ $count_pending_orders = mysqli_num_rows($run_pending_orders);
 				include("payment_delete.php");
 			}
 
-			if(isset($_GET['insert_user'])){
-				include("insert_user.php");
+			if(isset($_GET['view_users'])){
+				include("view_users.php");
 			}
 
+			if(isset($_GET['user_delete'])){
+				include("user_delete.php");
+			}
 			?>
 
 			

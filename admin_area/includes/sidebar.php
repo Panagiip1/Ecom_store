@@ -266,7 +266,7 @@ else {
     <div id="item-9" class="collapse">
       <ul class="nav flex-column ml-2">
         <li> <a class="dropdown-item" href="index.php?insert_user"> Εισαγωγή Χρήστη</a></li>
-         <li> <a class="dropdown-item" href="index.php?view_products"> Δείτε τους Χρήστες</a></li>
+         <li> <a class="dropdown-item" href="index.php?view_users"> Δείτε τους Χρήστες</a></li>
           <li> <a class="dropdown-item" href="index.php?view_products"> Edit το Προφίλ σας</a></li>
       </ul>
     </div>
