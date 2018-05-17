@@ -81,9 +81,18 @@
     margin-bottom: 20px;
     padding-bottom: 15px;
     padding-right: 10px;
+
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
 }
 
 .topnav a {
+	display: flex; 
+
    float: left;
     
     text-align: center;
@@ -104,11 +113,10 @@
    border-radius: 20px;
 
    border: 1px solid #000000;
-
-
-
  
 }
+
+
 
 .topnav .hom a {
 
@@ -149,7 +157,7 @@
     background-color: #99bbff;
     color: black;
     border-radius: 20px;
-    box-shadow: 0 2px #3333ff;
+   /* box-shadow: 0 2px #3333ff; */
     top: 2px;
  
 }
@@ -161,6 +169,8 @@
 
 
 }
+
+
 
 .topnav button {
   float: left;
@@ -176,7 +186,10 @@ color: white;
 
   position: relative;
 
+
 }
+
+
 
 #advantages h3 a{
 
@@ -748,4 +761,25 @@ body {
 
 .banner:hover .content a{
 	transform: translateY(0) scale(1);
+}
+
+
+/*Header Styles*/
+
+.container .navbar {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 35px 100px 0;
+	animation: 1s fadein 0.5s forwards;
+	opacity: 0;
+	color: #fff;
+}
+
+@keyframes fadein {
+	100% {
+		opacity: 1;
+	}
 }
