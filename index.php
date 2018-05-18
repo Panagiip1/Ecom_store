@@ -29,7 +29,7 @@ include("functions/functions.php");
 </head>
 <body>
 
-<br>
+
 
 
 
@@ -70,9 +70,9 @@ include("functions/functions.php");
 
 
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark"   style=" box-shadow: 0 10px 20px rgb(0,0,0,.2);">
   <div class="container">
-      <a class="navbar-brand" href="#"><button type="button" class="btn btn-success"><?php
+      <a class="navbar-brand" href="#"><button type="button" class="btn btn-success" style=" box-shadow: 0 10px 20px rgb(0,0,0,.2);"><?php
 
         if(!isset($_SESSION['customer_email'])){
 
@@ -158,7 +158,7 @@ include("functions/functions.php");
 
 
 
-
+<br>
 
   
 
@@ -368,11 +368,13 @@ include("functions/functions.php");
 
 </div> 
 
+<br>
+
 <div id="hot">
-  <div class="box">
+  <div class="box"  style=" box-shadow: 0 10px 20px rgb(0,0,0,.2);">
     <div class="container">
-      <div class="col-md-12">
-        <h2>Τελευταιες Προσφορες για την Τελευταια Εβδομαδα</h2>
+      <div class="col-md-12" >
+        <h2 >Τελευταιες Προσφορες για την Τελευταια Εβδομαδα</h2>
       </div>
     </div>
   </div>
@@ -440,7 +442,7 @@ include("functions/functions.php");
       </div> -->
 
 
-<div class="container">
+<div class="container" style="background-color: white; box-shadow: 0 10px 20px rgb(0,0,0,.2);">
   <div class="row">
 
     <?php
@@ -632,6 +634,8 @@ include("functions/functions.php");
   </div>
  
 </div>
+
+<br>
 
 <?php
 

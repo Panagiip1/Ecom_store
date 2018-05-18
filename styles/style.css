@@ -79,7 +79,7 @@
     background-color: white;
     margin-top: 44px;
     margin-bottom: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-right: 10px;
 
 }
@@ -149,7 +149,8 @@
 }
 
 .topnav .btn {
-	box-shadow: 0 3px #4d4df2;
+	/*box-shadow: 0 3px #4d4df2;*/
+	 box-shadow: 0 10px 20px rgb(0,0,0,.2);
 }
 
 
