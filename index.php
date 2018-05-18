@@ -70,7 +70,6 @@ include("functions/functions.php");
 
 
 
-
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
   <div class="container">
       <a class="navbar-brand" href="#"><button type="button" class="btn btn-success"><?php
@@ -164,9 +163,9 @@ include("functions/functions.php");
   
 
     <div class="container">
-    <div class="topnav">
+    <div class="topnav" style=" box-shadow: 0 10px 20px rgb(0,0,0,.2);">
 
-      <div class="hom" style="text-shadow: 2px 2px #050411;">
+      <div class="hom" >
         <a class="btn btn-primary" href="index.php"><i class="fas fa-home"></i> Home</a>
       </div>
 
@@ -253,8 +252,8 @@ include("functions/functions.php");
     </div>
 
  -->
-<div class="jumbotron">
-<div class="container" id="slider">
+<div class="jumbotron"  style=" box-shadow: 0 10px 20px rgb(0,0,0,.4);">
+<div class="container" id="slider" >
 <div class="col-md-12">
 <div id="demo" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
@@ -262,7 +261,7 @@ include("functions/functions.php");
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ul>
-  <div class="carousel-inner">
+  <div class="carousel-inner"  style=" box-shadow: 0 10px 20px rgb(0,0,0,.2);">
    <?php
 
    $get_slides = "select * from slider LIMIT 0,1";
@@ -275,7 +274,7 @@ include("functions/functions.php");
 
 
     echo "
-     <div class='carousel-item active'>
+     <div class='carousel-item active' >
       <img src='admin_area/slides_images/$slide_image' >  
     </div>
     ";
