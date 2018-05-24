@@ -159,6 +159,7 @@ include("functions/functions.php");
 
 
 <br>
+<br>
 
   
 
@@ -209,7 +210,7 @@ include("functions/functions.php");
     </div>
     </div>
 
-
+<br>
     <!-- <div class="container" id="slider">
       <div class="col-md-12">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -255,12 +256,14 @@ include("functions/functions.php");
 <div class="jumbotron"  style=" box-shadow: 0 10px 20px rgb(0,0,0,.4);">
 <div class="container" id="slider" >
 <div class="col-md-12">
+
 <div id="demo" class="carousel slide" data-ride="carousel">
   <ul class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ul>
+  
   <div class="carousel-inner"  style=" box-shadow: 0 10px 20px rgb(0,0,0,.2);">
    <?php
 
@@ -272,10 +275,14 @@ include("functions/functions.php");
     $slide_name = $row_slides['slide_name'];
     $slide_image = $row_slides['slide_image'];
 
+    $slide_url = $row_slides['slide_url'];
 
     echo "
      <div class='carousel-item active' >
-      <img src='admin_area/slides_images/$slide_image' >  
+      <a href='$slide_url'><img src='admin_area/slides_images/$slide_image' > </a>
+      <div class='carousel-caption'>
+          <button type='button' id='button_c' class='btn btn-info'>Καινουργιες Προσφορες</button>
+        </div> 
     </div>
     ";
    }
@@ -292,9 +299,14 @@ include("functions/functions.php");
     $slide_name = $row_slides['slide_name'];
     $slide_image = $row_slides['slide_image'];
 
+    $slide_url = $row_slides['slide_url'];
+
     echo "
      <div class='carousel-item'>
-      <img src='admin_area/slides_images/$slide_image' >  
+      <a href='$slide_url'><img src='admin_area/slides_images/$slide_image' ></a>
+      <div class='carousel-caption'>
+          <button type='button' id='button_c' class='btn btn-info'>Καινουργιες Προσφορες</button>
+        </div> 
      </div>
 
     ";
