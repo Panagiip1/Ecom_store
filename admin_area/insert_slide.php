@@ -46,6 +46,14 @@ else {
 	    					<input type="file" name="slide_image" class="form-control" required>
 	    				</div>
 	    			</div>
+
+	    			<div class="form-group row">
+	    				<label class="col-md-3 control-label">Slide Url</label>
+	    				<div class="col-md-8">
+	    					<input type="text" name="slide_url" class="form-control" required>
+	    				</div>
+	    			</div>
+
 	    			<div class="form-group row">
 	    				<label class="col-md-3 control-label"></label>
 	    				<div class="col-md-8">
@@ -69,6 +77,8 @@ if(isset($_POST['submit'])){
 
 	$temp_name = $_FILES['slide_image']['tmp_name'];
 
+	$slide_url = $_POST['slide_url'];
+
 	$view_slides = "select * from slider";
 
 	$view_run_slides = mysqli_query($con,$view_slides);
@@ -79,7 +89,7 @@ if(isset($_POST['submit'])){
 
 		move_uploaded_file($temp_name, "slides_images/$slide_image");
 
-		$insert_slide = "insert into slider (slide_name,slide_image) values ('$slide_name','$slide_image')";
+		$insert_slide = "insert into slider (slide_name,slide_image,slide_url) values ('$slide_name','$slide_image','$slide_url')";
 
 		$run_slide = mysqli_query($con,$insert_slide);
 
